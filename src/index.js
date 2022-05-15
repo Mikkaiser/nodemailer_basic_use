@@ -18,8 +18,8 @@ app.get('/sendmail', async (req, res) => {
     })
 
     const mailsent = await transporter.sendMail({
-        text: 'Texto do e-mail',
-        subject: 'Assunto do e-mail',
+        text: 'Email Text',
+        subject: 'Email subject',
         from: 'Mikael Ribeiro <mikaelrsimoes19@gmail.com>',
         to: ['mikaelrsimoes19@gmail.com']
     });
